@@ -1,0 +1,51 @@
+---
+title: "Self-Learning-R"
+author: "Chi Hyun Song"
+date: "March 6, 2018"
+output: html_document
+---
+
+Hey, you there! YOU seem to be interested in learning R. You've heard that R can do pretty much everything you need for data manipulation, visualization, and statistical analysis. You can't wait to get your hands it. However, you are not sure where to start. Where is the guidance? What are you suppose to do? Well, let me help you with my version of starter guide on "Self-Learning-R". It's really easier than you think!
+
+#Starting... like right now. Yes, today. Not tomorrow. You can look at memes tomorrow...
+Starting is difficult for everyone. It's something new, and you aren't sure where to start. You just tell yourself, "eh... I will start tomorrow", and then tomorrow becomes the tomorrow's tomorrow, and then tomorrow's tomorrow becomes the tomorrow's tomorrow's tomorrow, and it keeps going. That's why you have to start today even if it seems like it wouldn't hurt to start tomorrow. Ok, so you started. Now what do you do? Well, just search what R is first. Google is your best friend. I searched, "What is R?", and this is first [search](https://www.r-project.org/about.html) that came out. It's only one page, but you are not a fan of reading? Reading makes your head spin, and makes you want to quit? Same. I am not much of a reader either. Sometimes, for people like us, Youtube is our best choice! I searched, "What is R?" in Youtube, and this is first [search](https://www.youtube.com/watch?v=X67No4239Ys) that came out. Now you have a vague sense of what R is. It allows you to do some statistical stuff and you can analyse and graph things really easily. Ok, what is the second step?
+
+#Downloading R and other necessary stuff
+1. Go [here](https://cran.r-project.org/mirrors.html) to download R
+2. Choose the location closest to where you live
+3. Choose Mac, Linux, or Windows
+4. Then DOWNLOAD!
+5. NEXT STEP! Go [here](https://www.rstudio.com/products/rstudio/download/#download) to download R Studio. (RStudio makes R easier to use. It includes a code editor, debugging & visualization tools)
+6. Download Desktop version
+7. Choose the right operating system
+
+#Actually learning R
+I am not going to write 200 page long document on R. Instead, I am going to help you learn how to learn. If you are super new and don't know a thing about R. Just watch or read ANY (I MEAN ANY) tutorial or guide on the web. If you don't like one of the guide, move to another guide. If you don't understand something, don't skip it. Make sure you understand before you move onto another topic. Alright, now you have basic grasp of variables, vectors, functions, lists, libraries and data frames. Now, try building something. A function that takes in a variable and spits out something? A website that is capable of many different user interaction? I mean sky is the limit. Think of something and build it. Of course, you will run into some problems. When you do, the trick is to ask the right questions in the right way. Another trick is to assume that there are a particular solution to a problem you are facing, and that somebody probably already solved it for you! (especially true if you are new to programming) Let me explain with an example. I don't know why, but I need a function that will take in a number like 3, and that function will print out 3 random number ranging from 1 to 100. I only know how to write a function, print something out and other basic things, but that is all I know. So, I write to Google, "how to do something a number of times in R". One of the searches resulted in [this](https://www.datamentor.io/r-programming/repeat-loop). From that search, I got this far in my program.
+```
+random_number_generator <- function(num) {
+  x <- 0
+  repeat {
+    x = x + 1
+    if (x == num){
+      break
+    }
+  }
+}
+```
+Ok, so I got this far. This should loop through a "num" number of times. Now, I need to know how to create a random number ranging from 1 to 100. So, I write to Google, "how to generate a random number in R". One of the searches resulted in [this](http://blog.revolutionanalytics.com/2009/02/how-to-choose-a-random-number-in-r.html). With that search, I finished the program!
+```
+random_number_generator <- function(num) {
+  x <- 0
+  repeat {
+    x = x + 1
+    print(sample(1:100, 1))
+    if (x == num){
+      break
+    }
+  }
+}
+```
+Wow! That was easier than you thought right? Again, remember the two important things to take away from this example. First, ask the right question the right way. Second, if you have a problem, there must be a solution that somebody already figured out. If for some reason, you can't seem to find a solution. You can ask your own question in sites like [this](https://stackoverflow.com/).
+
+#Conclusion
+Anyone can learn R. That means you. YES YOU! You can learn it as well. I always loved Bob Ross, the painter, and he said, "Talent is a pursued interest. Anything that you're willing to practice, you can do.". So, go learn it right now!
